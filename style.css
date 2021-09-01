@@ -218,7 +218,7 @@ nav {
 	background-color: #3dcfd3;
 	border-radius: 50%;
 	position: absolute;
-	bottom: -520px;
+	bottom: -470px;
 	left: 330px;
 	box-shadow: 0 0 0 3px rgb(61 207 211 / 30%);
 	padding: 10px;
@@ -230,7 +230,7 @@ nav {
 	background-color: #3dcfd3;
 	border-radius: 50%;
 	position: absolute;
-	bottom: -540px;
+	bottom: -470px;
 	left: 1000px;
 	box-shadow: 0 0 0 3px rgb(61 207 211 / 30%);
 }
