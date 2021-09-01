@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeux Flash Projet</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="Entrance.css">
+        <link rel="stylesheet" href="../css/styleVirus.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="../index.html">Index</a>
+            <a href="FlappyBird.html">Flappy bird</a>
+            <a href="Morpion.html">Morpion</a>
+            <a href="ChiFouMi.html">Chi Fou Mi</a>
+            <a href="CasseBrique.html">Casse brique</a>
+            <a href="Memory.html">Memory</a>
+        </header>
+
+        <main class='game'>
+            
+            <div class='scale-in-hor-right'>
+                <div id="endScreen"></div>
+                <button id="start" onclick="start()">Démarrer / Redémarrer le jeu</button>
+                <div class="scoreboard"> 
+                    <div class="kills">Score : <span id="score">0</span></div>
+                    <div class="confinement">Jours avant la fin du confinement : <span id="days">60</span></div>
+                </div>
+
+	            <div id="canvas"></div>
+            </div>
+
+ <section class="descriptionVirus">
+                <h1>Virus</h1>
+                <h3>Description</h3>
+                <p>Vous n'êtes pas médecin mais vous souhaitez combattre une épidémie virale? Ce jeu est fait pour vous!</p>
+                <p>Le principe est simple: vous devez cliquer sur chacun des virus, et ce jusqu'à les avoir tous détruits.</p>
+                <p>Mais faites attention! Le confinement approche. Il faudra donc faire vite.</p>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+            <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Séverine , Jonathan , Mathieu et Valentin.</p>
+        </footer>
+        <script type="text/javascript" src="../js/mainVirus.js"></script>
+</body>
+</html>

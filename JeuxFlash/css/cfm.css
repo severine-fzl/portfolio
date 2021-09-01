@@ -1,0 +1,16 @@
+main{
+    margin:2rem auto;
+}
+.choices, .again{
+    margin:0 auto;
+    z-index:1;
+    display: none;
+    position:absolute;
+    width: 500px;
+    top:400px;
+}
+.active{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

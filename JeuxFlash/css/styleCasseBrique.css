@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+.game > div {
+    width: 800px;
+    height: 600px;
+}
