@@ -212,29 +212,6 @@ nav {
 	margin-bottom: 15px;
 }
 
-.rond1 {
-	width: 25px;
-	height: 25px;
-	background-color: #3dcfd3;
-	border-radius: 50%;
-	position: absolute;
-	bottom: -420px;
-	left: 330px;
-	box-shadow: 0 0 0 3px rgb(61 207 211 / 30%);
-	padding: 10px;
-}
-
-.rond2 {
-	width: 25px;
-	height: 25px;
-	background-color: #3dcfd3;
-	border-radius: 50%;
-	position: absolute;
-	bottom: -420px;
-	left: 1000px;
-	box-shadow: 0 0 0 3px rgb(61 207 211 / 30%);
-}
-
 /*PROJET*/
 
 .projet3WA {
