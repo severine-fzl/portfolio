@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EDEDED;
+	font-size: 18px;
+	color: #414141;
+	font-family: 'Nunito', sans-serif;
+}
+
+header, footer {
+	background-color: #00748D;
+	background-image: url(images/path.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 100px;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+header p, footer p {
+	align-self: flex-end;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-youtube, .fa-rss {
+	color: white;
+	padding-left: 10px;
+	font-size: 20px;
+}
+
+.logo, .nav {
+	display: flex;
+}
+
+li {
+	list-style-type: none;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav a {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+nav a:hover, nav a:focus, .navactive a {
+    color: #00748D;
+    background-color: #fff;
+}
+.container {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 1rem;
+}
+
+.portrait {
+	grid-row: span 2;
+}
+
+.gallery img {
+	align-self: stretch;
+	justify-self: stretch;
+	object-fit: cover;
+	border: #00748D 3px solid;
+}
