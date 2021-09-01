@@ -1,0 +1,49 @@
+.restaurant img {
+	width: 460px;
+	height: 320px;
+	float: right;
+	margin-left: 10px;
+	clear: both;
+	margin-top: 5px;
+}
+
+.restaurant p {
+	font-size: 18px;
+	font-family: Athiti;
+	margin: 10px;
+	color: black;
+}
+
+.all_menu img {
+	width: 350px;
+	height: 250px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.all_menu {
+	background-color: #ebe3db;
+	width: 350px;
+}
+
+.all_menu li {
+	padding-left: 20px;
+}
+
+.menu button {
+	background-color: #4c4343;
+	color: white;
+	text-align: center;
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}

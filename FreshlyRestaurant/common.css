@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDEDED;
+    font-size: 18px;
+    color: #414141;
+    font-family: 'Athiti', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: -80px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #4c4343;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+.logo, .nav {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ebe3db;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Athiti;
+}
+
+nav a:hover, nav a:focus, .navactive a {
+    color: #fff;
+    background-color: #4c4343;
+}
+
+h2, h3 {
+    font-family: Merienda;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px;
+}
+
+.restaurant h2, .menu h2, .menu h3 {
+    margin-bottom: 30px;
+}
+
+.special_menu h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+footer {
+    background-image: url(ressources/images/footer-bg.jpg);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-pinterest-p {
+    margin: 8px;
+    font-size: 25px;
+}
+.fa-star {
+    font-size: 10px;
+    color: #950000;
+}
+
+.slider {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
