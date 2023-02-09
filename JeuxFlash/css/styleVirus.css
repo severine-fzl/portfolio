@@ -1,0 +1,223 @@
+f*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Allerta Stencil', sans-serif;
+  user-select: none;
+}
+
+.game {
+    margin: 0;
+    padding-top: 100px;
+  text-align: center;
+  min-height: 100vh;
+  background: url(../img/hospital.jpg) no-repeat 0% 0%/cover;
+}
+.game > div {
+    background-color: initial;
+}
+
+#endScreen {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.452);
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.gameOver {
+    margin: 10rem auto 0;
+    width: 70%;
+    line-height: 9rem;
+    font-size: 5rem;
+    background: rgba(0, 0, 0, 0.7);
+    color : rgb(197, 197, 197);
+    box-shadow: 0 10px 15px black;
+}
+
+.youWin {
+    margin: 7rem auto 0;
+    width: 70%;
+    line-height: 9rem;
+    color: rgb(60, 0, 255);
+    background: rgba(255, 166, 0, 0.651);
+    box-shadow: 0 10px 15px black;
+    font-size: 4rem;
+    padding: 1rem;
+    text-shadow: 4px 2px 1px rgba(211, 4, 4, 0.808);
+}
+
+span {
+    color: rgb(233, 0, 0);
+    font-weight: bold;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.808);
+  }
+
+  #start {
+    margin: 2rem 2rem 0;
+    padding: 1rem 2rem;
+    background: rgba(252, 49, 49, 0.699);
+    border-radius: 5px;
+    color: #eee;
+    border: 1px rgba(128, 128, 128, 0.404) solid;
+    box-shadow: 1px 1px 1px #333;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    animation: shadow-pop-br 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+a:active {
+    animation: shadow-back 0.1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    
+@keyframes shadow-pop-br {
+    0% {
+    box-shadow: 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb;
+    transform: translateX(0) translateY(0);
+}
+    100% {
+    box-shadow: 1px 1px #bbb, 2px 2px #bbb, 3px 3px #bbb, 4px 4px #bbb, 5px 5px #bbb, 6px 6px #bbb, 7px 7px #bbb, 8px 8px #bbb;
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+@keyframes shadow-back {
+    0% {
+    box-shadow: 1px 1px #bbb, 2px 2px #bbb, 3px 3px #bbb, 4px 4px #bbb, 5px 5px #bbb, 6px 6px #bbb, 7px 7px #bbb, 8px 8px #bbb;
+    transform: translateX(-8px) translateY(-8px);
+}
+    100% {
+    box-shadow: 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb, 0 0 #bbb;
+    transform: translateX(0) translateY(0);
+   }
+}
+    
+a:hover {
+    box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ff0000c5;
+    color: black;
+    background: rgba(250, 136, 43, 0.966);
+}
+
+.scoreboard {
+    color: #eee;
+    padding-bottom: 1rem;
+}
+    
+.kills {
+    font-size: 2rem;
+    color:#eeeeee;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ff0000e1;
+}
+
+.confinement {
+    font-size: 1.6rem;
+    color:#eeeeee;
+}
+
+#days {
+    color: #ff0000e1;
+  }
+
+#canvas {
+    cursor: crosshair;
+    border: none;
+    border-top: 1px rgba(66, 0, 0, 0.561) solid;
+    border-left: 1px rgba(66, 0, 0, 0.561) solid;
+    background: linear-gradient(135deg,#ff00006b 0%, #ff0000da 100%);
+    box-shadow: 0 10px 15px black;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 400px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.virus {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: var(--y);
+    width: var(--x);
+    --scaler: 1;
+    animation: virusAnim 14s forwards;
+}
+
+a:hover {
+    --scaler: 1.03;
+}
+
+a:active {
+    --scaler: 0.97;
+}
+    
+@keyframes virusAnim {
+    from {
+    transform: translate(0%, 0%) scale(var(--scaler));
+}
+    to {
+    transform: translate(var(--trX), var(--trY)) scale(var(--scaler));
+    }
+ }
+
+
+
+/* SIGNATURE */
+
+.signature {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(51, 51, 51, 0.808);
+    padding: .5rem .5rem;
+    border-radius: 50px;
+    box-shadow: 0 0 0px 3px rgb(9,251,186);
+    color: rgb(9,251,186);
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+.signature:hover {
+    transform: translateX(3px);
+    background: linear-gradient(90deg, rgba(51, 51, 51, 0.808) 30%, rgba(100, 100, 100, 0.808) 100% );
+    transition: .3s ease;
+    box-shadow: 0 0 0px 3px rgb(79, 250, 204);
+    color: rgb(79, 250, 204);
+}
+
+.signature:focus {
+    outline: none;
+}
+
+.signature .flag {
+    height: 13px;
+    width: 22px;
+    background: linear-gradient(90deg, blue 36%, white 36%, white 67%, red 67%);
+    box-shadow: inset 2px 2px 2px #222, 2px 2px 1px #222;
+    margin-right: 6px;
+    transform: translateY(3px);
+}
+
+.signature h3 {
+    margin: 0;
+}
+
+.signature i {
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 1px #222;
+    transform: translateY(2px);
+}
