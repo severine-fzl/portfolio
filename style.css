@@ -457,7 +457,8 @@ nav {
 .projet3,
 .projet4,
 .projet5,
-.projet6 {
+.projet6,
+.projet7 {
 	width: 400px;
 	height: 420px;
 	border: 1px black transparent;
@@ -470,7 +471,8 @@ nav {
 .projet3:hover,
 .projet4:hover,
 .projet5:hover,
-.projet6:hover {
+.projet6:hover,
+.projet7:hover {
 	transform: translateY(-5px);
 }
 
@@ -479,7 +481,8 @@ nav {
 .archidesign,
 .freshlyRestaurant,
 .helloworld,
-.toDoList {
+.toDoList,
+.veganFood {
 	width: 400px;
 	height: 200px;
 }
