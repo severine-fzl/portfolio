@@ -423,42 +423,69 @@ nav {
 
 /*PROJET*/
 
-.projet3WA {
+.projetDev,
+.projetWebDesign {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	background: #3dcfd3;
+	padding: 30px;
+}
+
+.projetWebDesign {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.projetWebDesign {
+	margin-bottom: 15px;
+}
+
+.projet3WA,
+.projetPerso {
 	display: flex;
 	padding: 20px;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.projet3WA a {
+.projet3WA a,
+.projetPerso a {
 	color: black;
 }
 
-.projet3WA a:hover {
+.projet3WA a:hover,
+.projetPerso a:hover {
 	color: #3dcfd3;
 	transform: scale(1.3);
 }
 
-.projet3WA h2 {
+.projet3WA h2,
+.projetPerso h2 {
 	padding-left: 25px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-weight: bold;
 }
 
-.projet3WA p {
+.projet3WA p,
+.projetPerso p {
 	padding-left: 25px;
 	padding-bottom: 10px;
 	font-size: 18px;
 }
 
-.projet1,
-.projet2,
-.projet3,
-.projet4,
-.projet5,
-.projet6,
-.projet7 {
+.projetDev1,
+.projetDev2,
+.projetDev3,
+.projetDev4,
+.projetDev5,
+.projetDev6,
+.projetDev7,
+.projetDesign1,
+.projetDesign2,
+.projetDesign3,
+.projetDesign4 {
 	width: 400px;
 	height: 420px;
 	border: 1px black transparent;
@@ -466,13 +493,17 @@ nav {
 	margin: 11px;
 }
 
-.projet1:hover,
-.projet2:hover,
-.projet3:hover,
-.projet4:hover,
-.projet5:hover,
-.projet6:hover,
-.projet7:hover {
+.projetDev1:hover,
+.projetDev2:hover,
+.projetDev3:hover,
+.projetDev4:hover,
+.projetDev5:hover,
+.projetDev6:hover,
+.projetDev7:hover,
+.pprojetDesign1:hover,
+.projetDesign2:hover,
+.projetDesign3:hover,
+.projetDesign4:hover {
 	transform: translateY(-5px);
 }
 
@@ -482,17 +513,17 @@ nav {
 .freshlyRestaurant,
 .helloworld,
 .toDoList,
-.veganFood {
+.veganFood,
+.cuisine,
+.halloween,
+.foodTruck,
+.bureau {
 	width: 400px;
 	height: 200px;
 }
 
 .icone_descri {
-	display: flex;
-	justify-content: space-between;
-	width: 60%;
-	max-width: 120px;
-	margin: auto;
+	text-align: center;
 }
 
 .icone {
