@@ -1,0 +1,98 @@
+/*CSS COMMUN A TOUTES LES PAGES*/
+
+/* *****************************************************************
+GENERAL
+***************************************************************** */
+
+* {
+    box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+    margin: 0 ;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+header {
+    padding-top: 20px;
+    text-align: center;
+}
+
+header li {
+    list-style-type: none;
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    background-color: #9ACEAD;
+    margin-top: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-left: 50px;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+footer {
+    background-color: #9ACEAD;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+}
+
+footer h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.contact {
+    display: block;
+}
+
+.contact h3, .reseaux h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px dashed black;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer i {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fab, .fas {
+    color: black;
+}

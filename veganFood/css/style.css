@@ -1,0 +1,179 @@
+/* *****************************************************************
+GENERAL
+***************************************************************** */
+
+.idees img {
+    max-width: 100%;
+}
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+.avocat img {
+    min-width: 100%;
+}
+
+
+/* *****************************************************************
+SECTION PAGE ACCUEIL
+***************************************************************** */
+
+.nos_recettes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.idees h1 {
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+}
+
+.idees h2 {
+    margin: 20px;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+}
+
+.recette {
+    background-color: #9ACEAD;
+    text-align: center;
+    height: 430px;
+    width: 20%;
+    border-radius: 15px;
+}
+
+.recette button {
+    border: 1px transparent solid;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: #9ACEAD;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+/* *****************************************************************
+SECTION ENTREES, PLATS, DESSERTS, BOISSONS
+***************************************************************** */
+
+.ajouter_recette button {
+    background-color: #9ACEAD;
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.entrees, .plats, .desserts, .boissons {
+    margin-top: 30px;
+}
+
+.entrees h1, .plats h1, .desserts h1, .boissons h1 {
+    background-color: #9ACEAD;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+    margin-top: 30px;
+    font-family: 'Merienda';
+}
+
+.imgPlat { 
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    margin : 40px;
+}
+
+.food {
+    color: black;
+    background-color: white;
+    display: flex;
+    font-size: 18px;
+}
+
+.nombreDePersonne, .titrePreparation {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+
+.titrePreparation {
+    text-transform: uppercase;
+}
+
+.info {
+    padding-top: 50px;
+    width: 20%;
+}
+
+.info h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.info2 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.temps, .difficulte{
+    text-align: center;
+}
+
+.texteTemps, .texteDifficulte{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.preparation {
+    width: 50%;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.parEtape {
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.ingredients {
+    padding-top: 15px;
+    width: 80%;
+}
+
+.listeIngredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ingredientRecette{
+    padding-top: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.etape {
+    text-transform: uppercase;
+    font-weight: bold;
+}
