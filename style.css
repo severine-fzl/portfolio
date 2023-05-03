@@ -423,7 +423,7 @@ nav {
 
 /*PROJET*/
 
-.projetDev,
+.projetDeveloppeur,
 .projetWebDesign {
 	color: white;
 	text-transform: uppercase;
@@ -462,7 +462,7 @@ nav {
 
 .projet3WA h2,
 .projetPerso h2 {
-	padding-left: 25px;
+	padding-left: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-weight: bold;
@@ -470,40 +470,23 @@ nav {
 
 .projet3WA p,
 .projetPerso p {
-	padding-left: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-bottom: 10px;
 	font-size: 18px;
 }
 
-.projetDev1,
-.projetDev2,
-.projetDev3,
-.projetDev4,
-.projetDev5,
-.projetDev6,
-.projetDev7,
-.projetDesign1,
-.projetDesign2,
-.projetDesign3,
-.projetDesign4 {
-	width: 400px;
-	height: 420px;
+.projetDev,
+.projetDesign {
+	width: 350px;
+	height: 450px;
 	border: 1px black transparent;
 	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-	margin: 11px;
+	margin: 30px;
 }
 
-.projetDev1:hover,
-.projetDev2:hover,
-.projetDev3:hover,
-.projetDev4:hover,
-.projetDev5:hover,
-.projetDev6:hover,
-.projetDev7:hover,
-.pprojetDesign1:hover,
-.projetDesign2:hover,
-.projetDesign3:hover,
-.projetDesign4:hover {
+.projetDev:hover,
+.projetDesign:hover {
 	transform: translateY(-5px);
 }
 
@@ -517,16 +500,32 @@ nav {
 .cuisine,
 .halloween,
 .foodTruck,
-.bureau {
-	width: 400px;
+.bureau,
+.animaux,
+.boussole,
+.calculatrice,
+.logo_vintage,
+.multiprise,
+.paysage,
+.saucisse,
+.collier,
+.bus,
+.chaussure,
+.noir_et_blanc,
+.restauration_photo,
+.restauration_route,
+.building {
+	width: 350px;
 	height: 200px;
 }
 
-.icone_descri {
-	text-align: center;
+.icone {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.icone {
+.icone,
+.icone_descri {
 	text-align: center;
 }
 
